@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom';
-import { FaShoppingCart, FaUserAlt, FaHome, FaMobileAlt, FaHeadphonesAlt,FaUsers, FaUserCircle, FaSignOutAlt } from "react-icons/fa";
+import { FaShoppingCart, FaUserAlt, FaHome, FaMobileAlt, FaHeadphonesAlt,FaUsers, FaUserCircle, FaSignOutAlt,FaMobile } from "react-icons/fa";
 import { Row, Col ,Button} from 'reactstrap';
 
 import Order from '../order/list';
@@ -29,6 +29,7 @@ import Cauhinh from '../cauhinh/list';
 import './verticalmenu.css';
 
 import Login from '../login/login.js';
+import UserName from './topmenu';
 
 class VerticalMenu extends React.Component{
   constructor(props) {
@@ -42,7 +43,7 @@ class VerticalMenu extends React.Component{
   <Router>      
         <div className="wrapper">
            <div className="sidebar">
-              <h2>Dashboard</h2>
+              <h2><FaMobileAlt />Mobile Store</h2>
               <ul>
                   <li><Link to="/listsanpham" style={{ textDecoration: 'none'}}><FaHome /> Home</Link></li>
                   <li><Link to="/listsanpham" style={{ textDecoration: 'none'}}><FaMobileAlt /> Điện Thoại</Link></li>
@@ -57,7 +58,7 @@ class VerticalMenu extends React.Component{
           <div className="main_content">
             <div className="menutop">
                 <div>
-                  
+                 
                 </div>
             </div>
             <div className="contentbottom">

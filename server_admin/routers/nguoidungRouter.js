@@ -43,15 +43,15 @@ router.post("/login", function(req, res, next) {
 });
 
 
-// router.post('/create',function(req,res,next){
-//     Comment.addUS(req.body,function(err,count){
-//         if(err){
-//             res.json(err);
-//         } else{
-//             res.json(req.body);
-//         }
-//     });
-// });
+router.post('/create',function(req,res,next){
+    Comment.addUS(req.body,function(err,count){
+        if(err){
+            res.json(err);
+        } else{
+            res.json(req.body);
+        }
+    });
+});
 
 router.delete('/delete/:id',function(req,res,next){
     Comment.deleteUS(req.params.id,function(err,count){

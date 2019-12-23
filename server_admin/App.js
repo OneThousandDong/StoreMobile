@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 
 var connection = require('./Dbconnection.js');
 var dienthoaiRouter = require('./routers/dienthoaiRouter.js');
-var phukienRouter = require('./routers/phukienRouter.js')
+var phukienRouter = require('./routers/phukienRouter.js');
 var donhangRouter = require('./routers/donhangRouter.js');
 var commentRouter = require('./routers/commentRouter.js');
 var comment2Router = require('./routers/comment2Router.js');

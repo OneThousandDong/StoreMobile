@@ -25,7 +25,6 @@ router.get('/list/:id?',function(req,res,next){
 });
 
 router.post('/create',function(req,res,next){
-    console.log(req.body);
     Cauhinh.addCH(req.body,function(err,count){
         if(err){
             res.json(err);
@@ -46,7 +45,6 @@ router.delete('/delete/:id',function(req,res,next){
 });
 
 router.put('/update/:id',function(req,res,next){
-    console.log(req.body);
     Cauhinh.updateCH(req.params.id,req.body,function(err,rows){
         if(err){
             res.json(err);

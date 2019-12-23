@@ -85,6 +85,7 @@ class ThongTinDonHang extends React.Component{
           <li>Ghi chú:<span style={{fontWeight:"bold",color:"#4d94ff"}}> {this.state.GhiChu}</span>
           </li>
         </ul>
+        <span style={{fontSize: "20px", padding: "20px 20px",fontWeight: 'bold',color:"#005ce6"}}>Thông tin sản phẩm</span>
         {this.loadFillData()}
         <span style={{fontWeight: "bold",color:"#005ce6"}}>Tổng tiền đơn hàng:  {this.state.Tongtien} VNĐ</span>
         </div>
@@ -98,8 +99,7 @@ class ThongTinDonHang extends React.Component{
       if(data.LoaiSanPham === "Điện thoại"){
       return(
         <ul key={data.LoaiSanPham}>
-          <li>{data.LoaiSanPham}</li>
-          <li>{data.TenDienThoai}</li>
+          <li>{data.LoaiSanPham}: {data.TenDienThoai}</li>
           <li>Giá bán: {data.GiaBan} VNĐ</li>
           <li>Số lượng mua: {data.SoLuong}</li>
         </ul>
@@ -107,8 +107,8 @@ class ThongTinDonHang extends React.Component{
     }else{
         return(
         <ul key={data.LoaiSanPham}>
-          <li>{data.LoaiSanPham}</li>
-          <li>{data.TenPhuKien}</li>
+          <li>{data.LoaiSanPham}: {data.TenPhuKien}</li>
+          <li>Giá bán: {data.GiaBan} VNĐ</li>
           <li>Số lượng mua: {data.SoLuong}</li>
         </ul>
       )

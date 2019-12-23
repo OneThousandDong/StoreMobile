@@ -14,9 +14,6 @@ var Hinhanhdienthoai={
 	deleteImage:function(DuongDan,callback){
 		return db.query("delete from hinhanhdienthoai where DuongDan=?",[DuongDan],callback);
 	},
-	deleteALLImage:function(MaDT,callback){
-		return db.query("delete from hinhanhdienthoai where MaDT=?",[MaDT],callback);
-	},
 	updateImage:function(MaDT,hinhanhdienthoai,callback){
 		return db.query("update hinhanhdienthoai set DuongDan=? where MaDT=?"
 			,[hinhanhdienthoai.DuongDan,MaDT],callback);

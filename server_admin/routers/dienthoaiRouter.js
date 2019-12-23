@@ -51,7 +51,6 @@ router.post('/create',function(req,res,next){
 
 router.delete('/delete/:id',function(req,res,next){
     Dienthoai.deleteDT(req.params.id,function(err,count){
-        console.log(err)
         if(err){
             res.json(err);
         } else{

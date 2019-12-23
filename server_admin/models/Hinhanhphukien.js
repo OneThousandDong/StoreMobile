@@ -11,10 +11,7 @@ var Hinhanhphukien={
 		return db.query("Insert into hinhanhphukien(MaPhuKien,DuongDan) values(?,?)"
 			,[hinhanhphukien.MaPhuKien, hinhanhphukien.DuongDan],callback);
 	},
-	deleteImage:function(DuongDan,callback){
-		return db.query("delete from hinhanhphukien where DuongDan=?",[DuongDan],callback);
-	},
-	deleteALLImage:function(MaPhuKien,callback){
+	deleteImage:function(MaPhuKien,callback){
 		return db.query("delete from hinhanhphukien where MaPhuKien=?",[MaPhuKien],callback);
 	},
 	updateImage:function(MaPhuKien,hinhanhphukien,callback){

@@ -25,8 +25,8 @@ class AddNhanVien extends React.Component{
 				<Row>
 					<Col xs="4">
 				        <FormGroup>
-				            <Label for="eName">Mã nhân viên</Label>
-				            <Input type="text" name="name" id="eName" value={this.state.MaNguoiDung} onChange={(value) => this.setState({MaNguoiDung:value.target.value})}/>
+				            <Label for="eMa">Mã nhân viên</Label>
+				            <Input type="text" name="ma" id="eMa" value={this.state.MaNguoiDung} onChange={(value) => this.setState({MaNguoiDung:value.target.value})}/>
 				        </FormGroup>
 					</Col>
 					<Col xs="4">
@@ -40,8 +40,8 @@ class AddNhanVien extends React.Component{
 				<Row>
 					<Col xs="4">
 						<FormGroup>
-				       	 	<Label for="eEmail">Tên đăng nhập</Label>
-				       	 	<Input type="text" name="email" id="eEmail" value={this.state.TenDangNhap} onChange={(value)=> this.setState({TenDangNhap:value.target.value})} />
+				       	 	<Label for="eTdn">Tên đăng nhập</Label>
+				       	 	<Input type="text" name="tdn" id="eTdn" value={this.state.TenDangNhap} onChange={(value)=> this.setState({TenDangNhap:value.target.value})} />
 				    	</FormGroup>
 					</Col>
 					<Col xs="4">

@@ -44,17 +44,6 @@ router.delete('/delete/:id',function(req,res,next){
     });
 });
 
-router.delete('/deleteall/:id',function(req,res,next){
-    Comment.deleteALLImage(req.params.id,function(err,count){
-        if(err){
-            res.json(err);
-        } else{
-          res.json(count);
-        }
-    });
-});
-
-
 router.put('/update/:id',function(req,res,next){
     Comment.updateImage(req.params.id,req.body,function(err,rows){
         if(err){

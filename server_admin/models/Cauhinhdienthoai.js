@@ -22,7 +22,8 @@ var Cauhinh={
 		return db.query("delete from cauhinhdienthoai where MaDienThoai=?",[MaDienThoai],callback);
 	},
 	updateCH:function(MaDienThoai,cauhinhdienthoai,callback){
-		return db.query("update cauhinhdienthoai set CongNgheManHinh=?,DoPhanGiaiMH=?,DoRongMH=?,MatKinh=?,DoPhanGiaiCamSau=?,QuayPhimCamSau=?,DenFlashCamSau=?,NangCaoCamSau=?,DoPhanGiaiCamTruoc=?,VideoCall=?,ThongTinCamTruoc=?,HeDieuHanh=?,Chipset=?,CPU=?,GPU=?,RAM=?,ROM=?,TheNhoNgoai=?,MangDIDong=?,SIM=?,WIFI=?,GPS=?,Bluetooth=?,KetNoi=?,JackTaiNghe=?,KetNoiKhac=?,ThietKe=?,ChatLieu=?,KichThuoc=?,TrongLuong=?,DungLuongPin=?,LoaiPin=?,CongNghePin=?,BaoMat=?,TinhNangDacBiet=?,GhiAm=?,Radio=?,XemPhim=?,NgheNhac=?,ThoiDIemPhatHanh=? where MaDienThoai=?",[cauhinhdienthoai.CongNgheManHinh, cauhinhdienthoai.DoPhanGiaiMH, cauhinhdienthoai.DoRongMH, 
+		return db.query("update comment set CongNgheManHinh=?,DoPhanGiaiMH=?,DoRongMH,MatKinh=?,DoPhanGiaiCamSau=?,QuayPhimCamSau=?,DenFlashCamSau=?,NangCaoCamSau=?,DoPhanGiaiCamTruoc=?,VideoCall=?,ThongTinCamTruoc=?,HeDieuHanh=?,Chipset=?,CPU=?,GPU=?,RAM=?,ROM=?,TheNhoNgoai=?,MangDIDong=?,SIM=?,WIFI=?,GPS=?,Bluetooth=?,KetNoi=?,JackTaiNghe=?,KetNoiKhac=?,ThietKe=?,ChatLieu=?,KichThuoc=?,TrongLuong=?,DungLuongPin=?,LoaiPin=?,CongNghePin=?,BaoMat=?,TinhNangDacBiet=?,GhiAm=?,Radio=?,XemPhim=?,NgheNhac=?,ThoiDIemPhatHanh=? where MaDienThoai=?"
+			,[cauhinhdienthoai.CongNgheManHinh, cauhinhdienthoai.DoPhanGiaiMH, cauhinhdienthoai.DoRongMH, 
 			cauhinhdienthoai.MatKinh,cauhinhdienthoai.DoPhanGiaiCamSau,cauhinhdienthoai.QuayPhimCamSau, cauhinhdienthoai.DenFlashCamSau, 
 			cauhinhdienthoai.NangCaoCamSau,cauhinhdienthoai.DoPhanGiaiCamTruoc,cauhinhdienthoai.VideoCall, cauhinhdienthoai.ThongTinCamTruoc,
 			cauhinhdienthoai.HeDieuHanh, cauhinhdienthoai.Chipset,cauhinhdienthoai.CPU, cauhinhdienthoai.GPU, 
